@@ -229,7 +229,7 @@ class Heap(object):
             if left < self.__nElems and right >= self.__nElems:
                 return self.__arr[left].key
             if left < self.__nElems and right < self.__nElems:
-                if self.__arr[left].key > self.__arr[right].key:                #find the max between the children 
+                if self.__arr[left].key > self.__arr[right].key:                # find the max between the children 
                     return self.__arr[left].key
                 else: return self.__arr[right].key
     
