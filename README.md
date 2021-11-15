@@ -6,7 +6,7 @@ A MinMax heap is a complete binary tree data structure which combines the useful
 <p> &emsp; Insert &ensp; O(log n)	&emsp;O(log n) <p>
 <p> &ensp; Delete &ensp; O(log n) &emsp;[1]	O(log n) </p>
 
-However this implementation works in 0(1) time by having functions tickle which first determines whether the item will be on a min or max level and then call the appropriate tickle function (Min/Max) which both run on a Min Heap or Max heap in 0(1) time. 
+However this implementation works in 0(1) time by having a function which first determines whether the item will be on a min or max level and then call the appropriate tickle function (Min/Max) which both run on a Min Heap or Max heap in 0(1) time. 
 
 For more information on MinMax Heaps continue reading <a href = "https://en.wikipedia.org/wiki/Min-max_heap">here</a>
 
