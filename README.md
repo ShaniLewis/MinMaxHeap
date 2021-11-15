@@ -30,5 +30,5 @@ Which looks like the following respectively:
 <img src="heap.png" alt="Heap Visualization" width="40%" height="40%"> 
 <p> This Heap is read, left to right, in that the top left is the root node (5, 'E'). </p>
 <p> The next indented level is the 2nd level of the heap which in this case is (66, 'A') and (92, 'F'). </p>
-<p> The next indented level is the 3rd level which is the next indented level. </p>
+<p> The next indented level is the 3rd level which has 2 mini trees for (66, 'A') and (92, 'F'). </p>
 <p> For (66, 'A') this includes (7, 'I') and (21, 'J'), and for (92,'F') this includes (49,'C') and (59,'G'). And so on. </p>
