@@ -8,7 +8,7 @@ A MinMax heap is a complete binary tree data structure which combines the useful
 
 For more information on MinMax Heaps continue reading <a href = "https://en.wikipedia.org/wiki/Min-max_heap">here</a>
 
-## What you will find here
+## What you will find in this code
 This implementation of a MinMax Heap can perform the following operations:
 1. Insert
 2. Find Minimum
