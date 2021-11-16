@@ -24,8 +24,8 @@ This code also includes a test to ensure the MinMax Heap follows all the conditi
 3. Every level is alternating between Even/Min and Odd/Max
 4. And ensuring that every nodes position follows MinMax Heap rules.
 
-This code also includes two functions which print out visualizations of the Heap in a Array form and in a tree form. 
-Which looks like the following respectively:
+This code also includes two functions which print out visualizations of the Heap. One in Array form and one in tree form. 
+This looks like the following respectively:
 
 <img src="heap2.png" alt="Heap Visualization" width="100%" height="100%">
 
