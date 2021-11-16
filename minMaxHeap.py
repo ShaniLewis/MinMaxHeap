@@ -14,12 +14,14 @@ class Heap(object):
         self.__arr = [None] * size  # Array
         self.__nElems = 0           # Number of elements in Array     
     
+    
     #function to insert elements into the heap 
     def insert(self, key, data):
         
         # If the Array is full, return Error 
-        if self.__nElems >= len(self.__arr):                   
-            return print("Error: Array is full. (" + str(key) + ", " + str(data) + ") was not inserted. \n")
+        if self.__nElems >= len(self.__arr):  
+            #print('Error: Array is full. (1, "A") was not inserted.')
+            return None # other option would be to expand array 
         
         # If the Array is not full make a new node, trickleUp and then increment nElems by 1
         else:
@@ -255,7 +257,7 @@ class Heap(object):
        
         if left < self.__nElems and right < self.__nElems:                      # if there are two children:
             
-            if self.__arr[left].key > self.__arr[right].key:                    # the left one is bigger 
+            if self.__arr[left].key > self.__arr[right].key:                    # if the left one is bigger 
                 self.__arr[left] = self.__arr[self.__nElems]                    # trickledown 
                 self.__trickleDown(left)
             else:                                                               
@@ -314,12 +316,16 @@ class Heap(object):
     def display(self): 
         self.__display(0, 0)                    
     
+    def size(self):  return self.__nElems
 
 def __main():
     h = Heap(10)  # make a new heap with maximum of 10 elements
     for i in range(10):  # insert 30 items
         val = random.randint(0, 100)
         h.insert(val, chr(ord('A') + i))
+    
+    h.insert(1, "A")
+    
    
     print("This is the Min: ", h.findMin())
     print("This is the Max: ", h.findMax()) 
@@ -327,10 +333,7 @@ def __main():
     h.displayHeapArray()
     
     print()
-    h.display()  
+    h.display()      
     
-    
-    
-
 if __name__ == '__main__':
     __main() 
