@@ -6,7 +6,7 @@ A MinMax heap is a complete binary tree data structure which combines the useful
 <p> &emsp; Insert &ensp; O(log n)	&emsp;O(log n) <p>
 <p> &ensp; Delete &ensp; O(log n) &emsp;[1]	O(log n) </p>
 
-However this implementation works in 0(1) time by having a function which first determines whether the item will be on a min or max level and then call the appropriate tickle function (Min/Max) which both run on a Min Heap or Max heap in 0(1) time. 
+However this implementation works in 0(n) time by having a seperate function first determine whether the item will be on a min or max level and then calls the appropriate tickle function (Min/Max) which both run on a Min Heap or Max heap in 0(1) time. For more information on this click <a href = "https://stackoverflow.com/questions/47076465/how-to-build-a-min-max-heap-in-on-time-complexity">here</a>
 
 For more information on MinMax Heaps continue reading <a href = "https://en.wikipedia.org/wiki/Min-max_heap">here</a>
 
@@ -18,13 +18,13 @@ This implementation of a MinMax Heap can perform the following operations:
 4. Remove Minimum
 5. Remove Maximum
 
-This code also includes a test to ensure the MinMax Heap follows all the conditions of a MinMax Heap. This includes:
+This code also includes a test to ensure the MinMax Heap follows all the conditions of a MinMax Heap. such as:
 1. Ensuring the root is the minimum
 2. The max can be found on the 2nd level
 3. Every level is alternating between Even/Min and Odd/Max
-4. And using brute force to ensure that every node is where it should be
+4. And ensuring that every nodes position follows MinMax Heap rules.
 
-This code also includes functions which print out visualizations of the Heap in a Array form and in a tree form. 
+This code also includes two functions which print out visualizations of the Heap in a Array form and in a tree form. 
 Which looks like the following respectively:
 
 <img src="heap2.png" alt="Heap Visualization" width="100%" height="100%">
