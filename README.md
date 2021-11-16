@@ -1,4 +1,4 @@
-# MinMaxHeap
+# MinMax Heap
 A MinMax heap is a complete binary tree data structure which combines the usefulness of both a min-heap and a max-heap. A min-max heap contains alternating min (or even) and max (or odd) levels. Even levels are for example 0, 2, 4, etc, and odd levels are respectively 1, 3, 5, etc. The root element is at the first level, i.e., 0 and contains the smallest element of the tree. One of the two elements in the second level, which is a max (or odd) level, is the greatest element in the min-max heap.
 
 <b> The time complexities of a normal MinMax Heap are as follows: </b>
