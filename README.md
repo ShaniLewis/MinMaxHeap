@@ -1,14 +1,16 @@
-# MinMaxHeap
+# MinMax Heap
 A MinMax heap is a complete binary tree data structure which combines the usefulness of both a min-heap and a max-heap. A min-max heap contains alternating min (or even) and max (or odd) levels. Even levels are for example 0, 2, 4, etc, and odd levels are respectively 1, 3, 5, etc. The root element is at the first level, i.e., 0 and contains the smallest element of the tree. One of the two elements in the second level, which is a max (or odd) level, is the greatest element in the min-max heap.
 
-<b> The time complexities of a MinMax Heap are as follows: </b>
+<b> The time complexities of a normal MinMax Heap are as follows: </b>
 <p> &emsp; &emsp; &emsp; &ensp; Average &emsp; Worst </p>
 <p> &emsp; Insert &ensp; O(log n)	&emsp;O(log n) <p>
 <p> &ensp; Delete &ensp; O(log n) &emsp;[1]	O(log n) </p>
 
+However this implementation works in 0(n) time by having a seperate function first determine whether the item will be on a min or max level and then calls the appropriate tickle function (Min/Max) which both run on a Min Heap or Max heap in 0(1) time. For more information on this click <a href = "https://stackoverflow.com/questions/47076465/how-to-build-a-min-max-heap-in-on-time-complexity">here</a>
+
 For more information on MinMax Heaps continue reading <a href = "https://en.wikipedia.org/wiki/Min-max_heap">here</a>
 
-## What you will find here
+## What you will find in this code
 This implementation of a MinMax Heap can perform the following operations:
 1. Insert
 2. Find Minimum
@@ -16,14 +18,14 @@ This implementation of a MinMax Heap can perform the following operations:
 4. Remove Minimum
 5. Remove Maximum
 
-This code also includes a test to ensure the MinMax Heap follows all the conditions of a MinMax Heap. This includes:
+This code also includes a test to ensure the MinMax Heap follows all the conditions of a MinMax Heap. such as:
 1. Ensuring the root is the minimum
 2. The max can be found on the 2nd level
 3. Every level is alternating between Even/Min and Odd/Max
-4. And using brute force to ensure that every node is where it should be
+4. And ensuring that every nodes position follows MinMax Heap rules.
 
-This code also includes functions which print out visualizations of the Heap in a Array form and in a tree form. 
-Which looks like the following respectively:
+This code also includes two functions which print out visualizations of the Heap. One in Array form and one in tree form. 
+This looks like the following respectively:
 
 <img src="heap2.png" alt="Heap Visualization" width="100%" height="100%">
 
