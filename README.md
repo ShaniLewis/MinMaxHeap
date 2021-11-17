@@ -35,5 +35,5 @@ This looks like the following respectively:
 <p> The next indented level is the 3rd level which has 2 mini trees for (66, 'A') and (92, 'F'). </p>
 <p> For (66, 'A') this includes (7, 'I') and (21, 'J'), and for (92,'F') this includes (49,'C') and (59,'G'). And so on. </p>
 
-# What you will find in mmh_test.py
-This code uses pytest to test the all functuions used in minMaxHeap.py are working properly and at extremes (undeflow and overflow situations).
+## What you will find in mmh_test.py
+This code uses pytest to test all the functuions used in minMaxHeap.py. It tests normal circumstances as well as extreme ones such as undeflow and overflow situations.
