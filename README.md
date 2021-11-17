@@ -10,7 +10,7 @@ However this implementation works in 0(n) time by having a seperate function fir
 
 For more information on MinMax Heaps continue reading <a href = "https://en.wikipedia.org/wiki/Min-max_heap">here</a>
 
-## What you will find in this code
+## What you will find in minMaxHeap.py
 This implementation of a MinMax Heap can perform the following operations:
 1. Insert
 2. Find Minimum
@@ -27,10 +27,13 @@ This code also includes a test to ensure the MinMax Heap follows all the conditi
 This code also includes two functions which print out visualizations of the Heap. One in Array form and one in tree form. 
 This looks like the following respectively:
 
-<img src="heap2.png" alt="Heap Visualization" width="100%" height="100%">
+<img src="visualization pictures/heap2.png" alt="Heap Visualization" width="100%" height="100%">
 
-<img src="heap.png" alt="Heap Visualization" width="40%" height="40%"> 
+<img src="visualization pictures/heap.png" alt="Heap Visualization" width="40%" height="40%"> 
 <p> This Heap is read, left to right, in that the top left is the root node (5, 'E'). </p>
 <p> The next indented level is the 2nd level of the heap which in this case is (66, 'A') and (92, 'F'). </p>
 <p> The next indented level is the 3rd level which has 2 mini trees for (66, 'A') and (92, 'F'). </p>
 <p> For (66, 'A') this includes (7, 'I') and (21, 'J'), and for (92,'F') this includes (49,'C') and (59,'G'). And so on. </p>
+
+# What you will find in mmh_test.py
+This code uses pytest to test the all functuions used in minMaxHeap.py are working properly and at extremes (undeflow and overflow situations).
